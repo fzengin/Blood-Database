@@ -7,7 +7,7 @@ def tablo_olustur():
     cursor.execute("CREATE TABLE IF NOT EXISTS kitaplık (İsim TEXT,Soyad TEXT,Kan Grubu TEXT,Rh TEXT,Telefon Numarası INT)")
     con.commit()
 def veri_ekle():
-    cursor.execute("Insert into kitaplık Values('Rasim Fatih','Zengin','B','+',5346176353)")
+    cursor.execute("Insert into kitaplık Values('Rasim Fatih','Zengin','X','+',00000000000)")
     con.commit()
 def veri_ekle2(isim,soyad,kan_grubu,rh,telefon_numarası):
    cursor.execute("Insert into kitaplık Values(?,?,?,?,?)",(isim,soyad,kan_grubu,rh,telefon_numarası))
